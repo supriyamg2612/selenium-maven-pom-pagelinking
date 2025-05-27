@@ -1,7 +1,5 @@
 package com.supriya.ultimateqa.authentication.tests;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,7 +11,7 @@ import org.testng.annotations.Test;
 import com.supriya.ultimateqa.authentication.pages.LoginPage;
 
 
-public class TestClass {
+public class LoginTests {
 	
 WebDriver driver = null;
 	
