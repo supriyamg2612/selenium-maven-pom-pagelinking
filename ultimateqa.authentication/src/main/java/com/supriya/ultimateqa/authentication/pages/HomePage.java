@@ -20,8 +20,9 @@ WebDriver driver =null;
 	@FindBy(linkText = "Sign In")
 	WebElement signInButtonField;
 	
-	public void signInToApplication() {
+	public LoginPage signInToApplication() {
 		signInButtonField.click();
+		return new LoginPage(driver);
 	}
 	
 	

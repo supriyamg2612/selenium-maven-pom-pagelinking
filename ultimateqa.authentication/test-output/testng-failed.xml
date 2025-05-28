@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.supriya.ultimateqa.authentication.tests.HomePageTests">
+      <class name="com.supriya.ultimateqa.authentication.tests.LoginTests">
         <methods>
           <include name="configuration"/>
-          <include name="signToApplicationTest"/>
+          <include name="testOne"/>
         </methods>
-      </class> <!-- com.supriya.ultimateqa.authentication.tests.HomePageTests -->
+      </class> <!-- com.supriya.ultimateqa.authentication.tests.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

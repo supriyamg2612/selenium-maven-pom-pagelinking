@@ -8,23 +8,27 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.supriya.ultimateqa.authentication.pages.HomePage;
 import com.supriya.ultimateqa.authentication.pages.LoginPage;
 
 
 public class LoginTests {
 	
-WebDriver driver = null;
+WebDriver driver;
+LoginPage lp;
+HomePage hp;
 	
 	@BeforeSuite
 	public void configuration() {
 		System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
 		 driver = new ChromeDriver();
 		driver.get("https://courses.ultimateqa.com/");
+		hp =  new HomePage(driver);
 	}
 	
 	@Test
 	public void testOne() {
-		LoginPage lp = new LoginPage(driver);
+		 lp = hp.signInToApplication();
 		lp.loginToApplication("celinaredden123@gmail.com", "Celinaredden123");
 		WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
 
