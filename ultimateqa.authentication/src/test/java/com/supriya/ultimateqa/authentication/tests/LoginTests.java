@@ -19,7 +19,7 @@ WebDriver driver = null;
 	public void configuration() {
 		System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
 		 driver = new ChromeDriver();
-		driver.get("https://courses.ultimateqa.com/users/sign_in");
+		driver.get("https://courses.ultimateqa.com/");
 	}
 	
 	@Test
