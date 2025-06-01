@@ -37,13 +37,20 @@ public class LoginPage {
 	
 	
 
-    public void loginToApplication(String uname, String pass) {
-		emailField.sendKeys(uname);
-		passwordField.sendKeys(pass);
+    public void  loginToApplication(String uname, String pass) {
+		emailField.sendKeys("ferns123@gmail.com");
+		passwordField.sendKeys("Ferns@123456");
 		signInButtonField.click();
+		
 	
 		
 	}
+    public DashBoardPage validLogin() {
+    	emailField.sendKeys(null);
+    	passwordField.sendKeys(null);
+    	signInButtonField.click();
+    	return new DashBoardPage(driver);
+    }
     
     
     public CreateAccountPage navigateToCreateAccountlink() {
