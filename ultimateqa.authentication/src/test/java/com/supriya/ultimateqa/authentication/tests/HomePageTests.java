@@ -2,6 +2,8 @@ package com.supriya.ultimateqa.authentication.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -24,7 +26,12 @@ HomePage hp;
 	public void signToApplicationTest() {
 		
 		hp.signInToApplication();
+		Assert.assertEquals(driver.getCurrentUrl(), "https://courses.ultimateqa.com/users/sign_in");
 	}
 	
+	@AfterSuite
+    public void tearDown() {
+        driver.quit();
+    }
 
 }

@@ -1,13 +1,21 @@
 package com.supriya.ultimateqa.authentication.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 	
 	WebDriver driver =null;
+	WebDriverWait wait;
 	
 	
 	public LoginPage(WebDriver driver) {
@@ -24,19 +32,30 @@ public class LoginPage {
 	@FindBy(css="button[type='submit']")
 	WebElement signInButtonField;
 	
-	@FindBy(css = "a[href='/users/sign_up']")
-	WebElement createAccountField;
+	@FindBy(linkText =  "Create a new account")
+	WebElement createNewAccountField;
+	
+	
 
-  
-	
-	
-	public void loginToApplication(String uname, String pass) {
+    public void loginToApplication(String uname, String pass) {
 		emailField.sendKeys(uname);
 		passwordField.sendKeys(pass);
 		signInButtonField.click();
 	
 		
-	
-
+	}
+    
+    
+    public CreateAccountPage navigateToCreateAccountlink() {
+    	//driver.switchTo().frame(null)
+    	  wait = new WebDriverWait(driver, 15);
+    	 wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Create a new account")));
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	js.executeScript("arguments[0].scrollIntoView(true);", createNewAccountField);
+    	wait.until(ExpectedConditions.elementToBeClickable(createNewAccountField));
+    	createNewAccountField.click();
+    	
+    	
+        return new CreateAccountPage(driver);
 }
 }
