@@ -1,7 +1,5 @@
 package com.supriya.ultimateqa.authentication.pages;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
@@ -46,8 +44,8 @@ public class LoginPage {
 		
 	}
     public DashBoardPage validLogin() {
-    	emailField.sendKeys(null);
-    	passwordField.sendKeys(null);
+    	emailField.sendKeys("ferns123@gmail.com");
+    	passwordField.sendKeys("Ferns@123456");
     	signInButtonField.click();
     	return new DashBoardPage(driver);
     }

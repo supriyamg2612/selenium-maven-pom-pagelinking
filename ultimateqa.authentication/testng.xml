@@ -7,6 +7,9 @@
       <class name="com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests"/>
       <class name="com.supriya.ultimateqa.authentication.tests.DashBoardTests"/>
       <class name="com.supriya.ultimateqa.authentication.tests.HomePageTests"/>
+           <class name="com.supriya.ultimateqa.authentication.tests.MyDashboardPageTest"/>
+
+      
 
     </classes>
   </test> <!-- Test -->
