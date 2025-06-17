@@ -76,9 +76,8 @@ public class UserMenuComponent {
 	        return new MyAccountPage(driver);
 	    }
 	    
-	    public void clickSupport() {
-	        supportLink.click();
-			
+	    public String getSupportLinkHref() {
+	        return supportLink.getAttribute("href");
 	    }
 	    
 	    public LoginPage clickSignOut() {

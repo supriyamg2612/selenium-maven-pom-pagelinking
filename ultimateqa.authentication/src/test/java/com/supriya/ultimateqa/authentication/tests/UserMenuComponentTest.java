@@ -1,5 +1,7 @@
 package com.supriya.ultimateqa.authentication.tests;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -86,6 +88,15 @@ public class UserMenuComponentTest {
 	    	    String actualTitle = driver.getTitle();
 	    	    Assert.assertEquals(actualTitle, expectedTitle, "User should be redirected to Login page after sign out");
 
+	    }
+	    
+	    @Test(priority = 7)
+	    public void verifySupportLinkIsMailTo() {
+	        if (up == null || !up.isDropdownVisible()) {
+	            up = dp.clickUserMenuButton();
+	        }
+	        String href = up.getSupportLinkHref();  // You'll need to add this getter in UserMenuComponent
+	        Assert.assertTrue(href.startsWith("mailto:info@ultimateqa.com"), "Support link should be mailto");
 	    }
 	    
 	  
