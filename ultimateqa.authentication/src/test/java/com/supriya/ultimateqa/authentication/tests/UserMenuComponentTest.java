@@ -75,6 +75,19 @@ public class UserMenuComponentTest {
 	        Assert.assertEquals(up.getSignOutText(), "Sign Out");
 	    }
 	    
+	    @Test( priority = 6)
+	    public void testSignOutFunctionality() {
+	    	if (up == null || !up.isDropdownVisible()) {
+	            up = dp.clickUserMenuButton();
+	        }
+	        Assert.assertTrue(up.isDropdownVisible(), "Dropdown should be visible after clicking the user menu button");
+	        lp = up.clickSignOut();
+	        String expectedTitle = "UltimateQA"; 
+	    	    String actualTitle = driver.getTitle();
+	    	    Assert.assertEquals(actualTitle, expectedTitle, "User should be redirected to Login page after sign out");
+
+	    }
+	    
 	  
 	    @AfterClass
 	    public void tearDown() {

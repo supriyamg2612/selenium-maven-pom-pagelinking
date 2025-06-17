@@ -5,8 +5,14 @@
     <classes>
       <class name="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest">
         <methods>
+          <include name="testMyAccountOptionIsDisplayed"/>
           <include name="configuration"/>
+          <include name="testSignOutOptionIsDisplayed"/>
           <include name="tearDown"/>
+          <include name="testUserMenuButtonIsDisplayed"/>
+          <include name="testSignOutFunctionality"/>
+          <include name="verifyUserMenuButtonClickable"/>
+          <include name="testSupportOptionIsDisplayed"/>
           <include name="verifyDropdownOptionsText"/>
         </methods>
       </class> <!-- com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest -->
