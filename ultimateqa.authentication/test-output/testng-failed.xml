@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.supriya.ultimateqa.authentication.tests.DashBoardTests">
+      <class name="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest">
         <methods>
-          <include name="openDashboardPageAfterValidLogin"/>
           <include name="configuration"/>
+          <include name="tearDown"/>
+          <include name="verifyDropdownOptionsText"/>
         </methods>
-      </class> <!-- com.supriya.ultimateqa.authentication.tests.DashBoardTests -->
+      </class> <!-- com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
