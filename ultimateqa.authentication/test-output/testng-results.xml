@@ -1,45 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T12:29:57Z" name="Default suite" finished-at="2025-06-17T12:30:16Z" duration-ms="18775">
+  <suite started-at="2025-06-17T13:21:50Z" name="Default suite" finished-at="2025-06-17T13:27:04Z" duration-ms="313971">
     <groups>
     </groups>
-    <test started-at="2025-06-17T12:29:57Z" name="Default test" finished-at="2025-06-17T12:30:16Z" duration-ms="18775">
+    <test started-at="2025-06-17T13:21:50Z" name="Default test" finished-at="2025-06-17T13:27:04Z" duration-ms="313971">
       <class name="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest">
-        <test-method is-config="true" signature="configuration()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:29:57Z" name="configuration" finished-at="2025-06-17T12:30:10Z" duration-ms="12961" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@2a265ea9]" started-at="2025-06-17T13:21:50Z" name="configuration" finished-at="2025-06-17T13:22:00Z" duration-ms="10224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="testUserMenuButtonIsDisplayed()[pri:1, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:10Z" name="testUserMenuButtonIsDisplayed" finished-at="2025-06-17T12:30:13Z" duration-ms="2826" status="PASS">
+        <test-method signature="verifySupportLinkIsMailTo()[pri:7, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@2a265ea9]" started-at="2025-06-17T13:22:00Z" name="verifySupportLinkIsMailTo" finished-at="2025-06-17T13:27:03Z" duration-ms="303258" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ameyas-MBP.fritz.box', ip: 'fdde:1c74:a112:0:8c4:828a:607b:550c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: /var/folders/7g/3hglgn694qj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4db0518a344413e4334b2e1747be8030]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ameyas-MBP.fritz.box', ip: 'fdde:1c74:a112:0:8c4:828a:607b:550c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.6', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: /var/folders/7g/3hglgn694qj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4db0518a344413e4334b2e1747be8030
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
+at com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifySupportLinkIsMailTo(UserMenuComponentTest.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUserMenuButtonIsDisplayed -->
-        <test-method signature="verifyUserMenuButtonClickable()[pri:2, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:13Z" name="verifyUserMenuButtonClickable" finished-at="2025-06-17T12:30:13Z" duration-ms="260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserMenuButtonClickable -->
-        <test-method signature="testMyAccountOptionIsDisplayed()[pri:3, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:13Z" name="testMyAccountOptionIsDisplayed" finished-at="2025-06-17T12:30:13Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMyAccountOptionIsDisplayed -->
-        <test-method signature="testSupportOptionIsDisplayed()[pri:4, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:13Z" name="testSupportOptionIsDisplayed" finished-at="2025-06-17T12:30:13Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSupportOptionIsDisplayed -->
-        <test-method signature="testSignOutOptionIsDisplayed()[pri:5, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:13Z" name="testSignOutOptionIsDisplayed" finished-at="2025-06-17T12:30:13Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignOutOptionIsDisplayed -->
-        <test-method signature="verifyDropdownOptionsText()[pri:5, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:13Z" name="verifyDropdownOptionsText" finished-at="2025-06-17T12:30:13Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDropdownOptionsText -->
-        <test-method signature="testSignOutFunctionality()[pri:6, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:13Z" name="testSignOutFunctionality" finished-at="2025-06-17T12:30:15Z" duration-ms="2028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignOutFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@f0c8a99]" started-at="2025-06-17T12:30:15Z" name="tearDown" finished-at="2025-06-17T12:30:16Z" duration-ms="315" status="PASS">
+        </test-method> <!-- verifySupportLinkIsMailTo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@2a265ea9]" started-at="2025-06-17T13:27:03Z" name="tearDown" finished-at="2025-06-17T13:27:04Z" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
