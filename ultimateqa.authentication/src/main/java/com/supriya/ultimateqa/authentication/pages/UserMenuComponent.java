@@ -76,9 +76,9 @@ public class UserMenuComponent {
 	        return new MyAccountPage(driver);
 	    }
 	    
-	    public SupportPage clickSupport() {
+	    public void clickSupport() {
 	        supportLink.click();
-			return new SupportPage(driver);
+			
 	    }
 	    
 	    public LoginPage clickSignOut() {
