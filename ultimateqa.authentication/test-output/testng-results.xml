@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T10:26:10Z" name="Default suite" finished-at="2025-06-17T10:26:24Z" duration-ms="13633">
+  <suite started-at="2025-06-17T10:41:19Z" name="Default suite" finished-at="2025-06-17T10:41:34Z" duration-ms="14939">
     <groups>
     </groups>
-    <test started-at="2025-06-17T10:26:10Z" name="Default test" finished-at="2025-06-17T10:26:24Z" duration-ms="13633">
-      <class name="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest">
-        <test-method is-config="true" signature="configuration()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:10Z" name="configuration" finished-at="2025-06-17T10:26:20Z" duration-ms="9489" status="PASS">
+    <test started-at="2025-06-17T10:41:19Z" name="Default test" finished-at="2025-06-17T10:41:34Z" duration-ms="14939">
+      <class name="com.supriya.ultimateqa.authentication.tests.MyAccountPageTest">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.MyAccountPageTest@3646a422]" started-at="2025-06-17T10:41:19Z" name="configuration" finished-at="2025-06-17T10:41:29Z" duration-ms="9937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="testUserMenuButtonIsDisplayed()[pri:1, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:20Z" name="testUserMenuButtonIsDisplayed" finished-at="2025-06-17T10:26:23Z" duration-ms="3196" status="PASS">
+        <test-method signature="testMyAccountNavigationAndTitle()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.MyAccountPageTest@3646a422]" started-at="2025-06-17T10:41:29Z" name="testMyAccountNavigationAndTitle" finished-at="2025-06-17T10:41:34Z" duration-ms="4946" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUserMenuButtonIsDisplayed -->
-        <test-method signature="verifyUserMenuButtonClickable()[pri:2, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:23Z" name="verifyUserMenuButtonClickable" finished-at="2025-06-17T10:26:23Z" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserMenuButtonClickable -->
-        <test-method signature="testMyAccountOptionIsDisplayed()[pri:3, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:23Z" name="testMyAccountOptionIsDisplayed" finished-at="2025-06-17T10:26:23Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMyAccountOptionIsDisplayed -->
-        <test-method signature="testSupportOptionIsDisplayed()[pri:4, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:23Z" name="testSupportOptionIsDisplayed" finished-at="2025-06-17T10:26:23Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSupportOptionIsDisplayed -->
-        <test-method signature="testSignOutOptionIsDisplayed()[pri:5, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:23Z" name="testSignOutOptionIsDisplayed" finished-at="2025-06-17T10:26:23Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignOutOptionIsDisplayed -->
-        <test-method signature="verifyDropdownOptionsText()[pri:5, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:23Z" name="verifyDropdownOptionsText" finished-at="2025-06-17T10:26:24Z" depends-on-methods="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifyUserMenuButtonClickable" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDropdownOptionsText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest@46cdf8bd]" started-at="2025-06-17T10:26:24Z" name="tearDown" finished-at="2025-06-17T10:26:24Z" duration-ms="331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest -->
+        </test-method> <!-- testMyAccountNavigationAndTitle -->
+      </class> <!-- com.supriya.ultimateqa.authentication.tests.MyAccountPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
