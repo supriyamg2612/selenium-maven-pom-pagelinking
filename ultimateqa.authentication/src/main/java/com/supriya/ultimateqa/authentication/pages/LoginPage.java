@@ -35,8 +35,8 @@ public class LoginPage {
 	
 
     public void  loginToApplication(String uname, String pass) {
-		emailField.sendKeys("ferns123@gmail.com");
-		passwordField.sendKeys("Ferns@123456");
+		emailField.sendKeys(uname);
+		passwordField.sendKeys(pass);
 		signInButtonField.click();
 		
 	
