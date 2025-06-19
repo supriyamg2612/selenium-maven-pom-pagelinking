@@ -1,9 +1,9 @@
 package com.supriya.ultimateqa.authentication.tests;
 
-import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -92,11 +92,23 @@ public class UserMenuComponentTest {
 	    
 	    @Test(priority = 7)
 	    public void verifySupportLinkIsMailTo() {
-	        if (up == null || !up.isDropdownVisible()) {
+	    	
+	            hp.signInToApplication();  // Or appropriate login steps
+	            dp = lp.validLogin();
+	            up = null;
+	            
+	            wait = new WebDriverWait(driver, 15);
+	            wait.until(ExpectedConditions.elementToBeClickable(dp.userMenuComponentButtonLink));
+	        
+
 	            up = dp.clickUserMenuButton();
-	        }
-	        String href = up.getSupportLinkHref();  // You'll need to add this getter in UserMenuComponent
-	        Assert.assertTrue(href.startsWith("mailto:info@ultimateqa.com"), "Support link should be mailto");
+
+	            // Wait explicitly for dropdown to be visible before getting href
+	            wait.until(driver -> up.isDropdownVisible());
+
+	            String href = up.getSupportLinkHref();
+	            Assert.assertTrue(href.startsWith("mailto:info@ultimateqa.com"), "Support link should be mailto");
+	        
 	    }
 	    
 	  

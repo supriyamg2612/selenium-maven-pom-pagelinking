@@ -25,6 +25,7 @@ public class DashBoardPage {
     WebElement myDashboardLinkFiled;
 	
 	@FindBy(xpath = "//button[contains(@class,'dropdown__toggle-button')]")
+	public
 	WebElement userMenuComponentButtonLink;
 	
 	 @FindBy(id="header-dropdown-menu")

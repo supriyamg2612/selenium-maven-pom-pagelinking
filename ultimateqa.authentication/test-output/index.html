@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest" class="method navigator-link" hash-for-method="verifySupportLinkIsMailTo">verifySupportLinkIsMailTo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests" class="method navigator-link" hash-for-method="createNewAccountTest">createNewAccountTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,21 +120,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest</span>
+              <span class="class-name">com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySupportLinkIsMailTo">
-                  </a> <!-- verifySupportLinkIsMailTo -->
-                  <span class="method-name">verifySupportLinkIsMailTo</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=137.0.7151.104)
+                  <a name="createNewAccountTest">
+                  </a> <!-- createNewAccountTest -->
+                  <span class="method-name">createNewAccountTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#user\[first_name\]&quot;}
+  (Session info: chrome=137.0.7151.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Ameyas-MBP.fritz.box&apos;, ip: &apos;fdde:1c74:a112:0:8c4:828a:607b:550c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: /var/folders/7g/3hglgn694qj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4db0518a344413e4334b2e1747be8030
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.119, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: /var/folders/7g/3hglgn694qj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9129dea402152ab590651385d0e58c96
+*** Element info: {Using=id, value=user[first_name]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -146,9 +148,15 @@ Session ID: 4db0518a344413e4334b2e1747be8030
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:287)
-	at com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest.verifySupportLinkIsMailTo(UserMenuComponentTest.java:104)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at com.supriya.ultimateqa.authentication.pages.CreateAccountPage.createNewAccount(CreateAccountPage.java:41)
+	at com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests.createNewAccountTest(CreateAccountPageTests.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -183,7 +191,7 @@ Session ID: 4db0518a344413e4334b2e1747be8030
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/7g/3hglgn694qj_8l3v3_d5s8740000gn/T/testng-eclipse--1982617842/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/7g/3hglgn694qj_8l3v3_d5s8740000gn/T/testng-eclipse-1696630652/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -192,11 +200,7 @@ Session ID: 4db0518a344413e4334b2e1747be8030
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifySupportLinkIsMailTo&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest --&gt;
+      &lt;class name=&quot;com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -238,14 +242,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySupportLinkIsMailTo')
-data.setCell(0, 2, 'com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest')
-data.setCell(0, 3, 303258);
+data.setCell(0, 1, 'createNewAccountTest')
+data.setCell(0, 2, 'com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests')
+data.setCell(0, 3, 3154);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,28 +264,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testMyAccountOptionIsDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">testSignOutOptionIsDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">testUserMenuButtonIsDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">testSignOutFunctionality</span>
-                <br/>
-                <span class="ignored-method-name">verifyUserMenuButtonClickable</span>
-                <br/>
-                <span class="ignored-method-name">testSupportOptionIsDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">verifyDropdownOptionsText</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -290,7 +275,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.supriya.ultimateqa.authentication.tests.UserMenuComponentTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.supriya.ultimateqa.authentication.tests.CreateAccountPageTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configuration</span>
                 <span class="method-start">0 ms</span>
@@ -298,12 +283,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifySupportLinkIsMailTo</span>
-                <span class="method-start">10245 ms</span>
+                <span class="method-name">createNewAccountTest</span>
+                <span class="method-start">7657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">313521 ms</span>
+                <span class="method-start">10859 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -55,8 +55,9 @@ public class DashBoardTests {
 		
 		 @AfterClass
 		    public void tearDown() {
-		        driver.quit();
-		    }
+		        if (driver != null) {
+		            driver.quit();
+		        }
 		
 		
-}
+}}

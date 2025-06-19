@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.supriya.ultimateqa.authentication.pages.DashBoardPage;
@@ -48,7 +47,7 @@ public class MyDashboardPageTest {
 
 	 @AfterClass
 	    public void tearDown() {
-	        driver.quit();
-	    }
-
+	        if (driver != null) {
+	            driver.quit();
+	        }}
 }

@@ -6,9 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.supriya.ultimateqa.authentication.pages.CreateAccountPage;
@@ -40,7 +38,7 @@ public class CreateAccountPageTests {
 			
 		hp.signInToApplication();
 		cp=lp.navigateToCreateAccountlink();
-		cp.createNewAccount("Alexa", "Ferns", "ferns12@gmail.com", "Ferns@123456");
+		cp.createNewAccount("Alice", "Ferns", "ferns11@gmail.com", "Ferns@123456");
 		wait = new WebDriverWait(driver, 10);
 	    wait.until(ExpectedConditions.urlToBe("https://courses.ultimateqa.com/collections"));
 	    Assert.assertEquals(driver.getCurrentUrl(), "https://courses.ultimateqa.com/collections");
@@ -48,11 +46,14 @@ public class CreateAccountPageTests {
 			
 		}
 		
-		 @AfterClass
-		    public void tearDown() {
-		        driver.quit();
-		    }
-
+		@AfterClass
+	    public void tearDown() {
+	        if (driver != null) {
+	            driver.quit();
+	        }
+	
+	
+}
 		
 
 }
